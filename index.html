@@ -82,11 +82,10 @@
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
           valentineQuestion.textContent = ["No", "Segur@?", "Realmente estas segur@?", "Esperare hasta que digas que si", "Si no das que si me arrojare 😭", "Me ire a llorar hasta que digas que si..."][noClickCount];
-        } else {
-          function abrirLink() {
+        } 
+        if (noClickCount < 7) {
           const enlace = document.getElementById("enlace");
           enlace.click();
-          }
         }
       }
     });
