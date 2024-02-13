@@ -79,14 +79,14 @@
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
-          valentineQuestion.textContent = ["No", "Segur@?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry..."][noClickCount];
+          valentineQuestion.textContent = ["No", "Segur@?", "Realmente estas segur@?", "Esperare hasta que digas que si", "Si no das que si me arrojare 😭", "Me ire a llorar hasta que digas que si..."][noClickCount];
         }
       }
     });
   
     yesButton.addEventListener('click', () => {
       imageDisplay.src = './images/image7.gif'; // Change to image7.gif
-      valentineQuestion.textContent = "Yayyy!! :3"; // Change the question text
+      valentineQuestion.textContent = <a href="https://wa.me">"Yayyy!! mandame un msjito :3"</a>; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
     });
